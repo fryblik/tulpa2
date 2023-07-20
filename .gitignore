@@ -159,3 +159,12 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 # >:3
+
+# Tulpa configuration files and secrets
+config/
+!config/config.example.yaml
+!TOKEN.example.yaml
+
+# Tulpa generated files
+db/
+logs/

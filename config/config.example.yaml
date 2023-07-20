@@ -1,0 +1,42 @@
+General:
+  log_path: 'logs/tulpa.log'
+  db_path: 'db/tulpa.sqlite'
+
+Keys:  # API keys
+  nasa:
+
+EasterEggs:
+  cow_enabled: true
+  weird_enabled: true
+
+Guilds:  # Guild IDs
+  release:
+  test_guilds:  # Array of IDs
+    -
+
+Categories:  # Channel category IDs
+  general:
+  thematic:
+  restricted:
+
+Channels:  # Guild channel IDs
+  off_topic:
+  technology:
+  adult_chat:
+  adult_pics:
+  adult_channels:  # Array of channel keys, not IDs
+    - adult_chat
+    - adult_pics
+
+Roles:  # Guild role IDs
+  admin:
+  mod:
+  member:
+  muted:
+  custom:
+    brno:
+    prague:
+
+Users:  # Discord user IDs
+  bot_owner:
+  chicken:
