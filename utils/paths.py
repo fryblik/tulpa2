@@ -25,7 +25,7 @@ def get_root_dir_path():
 
     :return: Absolute path to the project's root.
     """
-    return os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 
 @memoize
@@ -39,5 +39,5 @@ def get_subdirectory_path(name: str):
     root_dir = get_root_dir_path()
     subdirectory_path = os.path.join(root_dir, name)
     if not os.path.isdir(subdirectory_path):
-        raise ValueError(f'Invalid subdirectory name: {name}')
+        raise ValueError(f"Invalid subdirectory name: {name}")
     return subdirectory_path
