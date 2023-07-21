@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tulpa2"
+version = "0.1.0"
+description = "The unofficial CZ/SK Bronies Discord community bot"
+authors = ["a10 <adalbert.a10@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyYAML = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
