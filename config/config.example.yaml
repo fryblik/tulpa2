@@ -1,9 +1,11 @@
 General:
-  log_path: 'logs/tulpa.log'
-  db_path: 'db/tulpa.sqlite'
+  db_path: "db/tulpa.sqlite"
 
-Keys:  # API keys
-  nasa:
+Logging:
+  path: "logs/tulpa.log"
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
 
 EasterEggs:
   cow_enabled: true

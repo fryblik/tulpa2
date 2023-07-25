@@ -163,7 +163,6 @@ cython_debug/
 # Tulpa configuration files and secrets
 config/
 !config/config.example.yaml
-!TOKEN.example.yaml
 
 # Tulpa generated files
 db/

@@ -1,6 +1,7 @@
 import os
 
 import yaml
+from dotenv import load_dotenv
 
 from utils.paths import get_subdirectory_path
 
@@ -33,3 +34,19 @@ def get_config():
         if _config is None:
             raise ConfigLoadError(f'Configuration is empty in "{cfg_path}".')
     return _config
+
+
+def get_bot_token() -> str:
+    """
+    Get the application token.
+
+    Load the BOT_TOKEN environment variable from the `.env` file.
+
+    :return: Token string.
+    """
+    if not load_dotenv():
+        raise ConfigLoadError(f"No environment variables loaded. Check the .env file.")
+    token = os.environ.get("BOT_TOKEN")
+    if not token:
+        raise ConfigLoadError(f"Missing BOT_TOKEN variable. Check the .env file.")
+    return token
